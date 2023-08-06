@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weatherapp/model/weather_model.dart';
 import 'package:weatherapp/services/weather_api_client.dart';
-
 import 'additional_information.dart';
 import 'current_weather.dart';
 
@@ -15,8 +14,6 @@ class HomePage extends StatefulWidget {
 TextEditingController editingController = TextEditingController();
 
 class _HomePageState extends State<HomePage> {
-  @override
-  // ignore: override_on_non_overriding_member
   WeatherApiClient client = WeatherApiClient();
   Weather? data;
   String place = 'kochi';
